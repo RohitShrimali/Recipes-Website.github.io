@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css\style.css">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgba(192, 116, 163, 0.2);
+        }
+        .gallary{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 31px;
+            display: flex;
+            
+        }
+        .gallary .card{
+            border: 1px solid black;
+            width: 20%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .gallary .card img{
+            width: 100%;
+            height: 210px;
+            background-position: center;
+            background-size: cover;
+            transition: 0.5s;
+        }
+        .gallary .card:hover img{
+            transform: scale(0.9);
+        }
+        .gallary .card .cardhead{
+            height: 40px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .gallary .card .cardbottom{
+            padding: 10px;
+        }
+
+        .gallary .card .cardbottom button{
+            height: 30px;
+            border: none;
+            color: #f44336;
+            border: 1px solid #f44336;
+            transition: 0.5s;
+        }
+        .gallary .card .cardbottom button a{
+            text-decoration: none;
+            color: #f44336;
+            transition: 0.5s;
+        }
+        .gallary .card .cardbottom button:hover{
+            background-color: #f44336;
+            color: white;
+        }
+        .gallary .card .cardbottom button a:hover{
+            color: white;
+        }
+        
+        .recipe_title{
+            width: 30%;
+            text-align: center;
+            border: 1px solid red;
+            margin: auto;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgba(0,0,0,0.1);
+            transition: 0.5s;
+        }
+        .recipe_title:hover{
+            transform: scale(0.9);
+        }
+        .recipe_title p{
+            color: #777;
+        }
+        @media(max-width: 700px){
+            .gallary{
+                flex-direction: column;
+            }
+            .gallary .card{
+                width: 80%;
+                margin-bottom: 10px;
+            }
+            .recipe_title{
+                width: 80%;
+            }
+            .recipe_title h1{
+                font-size: 30px;
+                font-weight: 500;
+               
+            }
+            .recipe_title p{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+ <!-- Header section -->
+ <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="css\images\logo-no-background.png"></a>
+        <div class="nav-links">
+            <i class="bi bi-x-lg"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="recipesgallary.html">RECIPES</a></li>
+                <li><a href="recipesgallary.html">BLOG</a></li>
+                <li><a href="form.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="bi bi-list"></i>
+    </nav>
+    <h1>Recipes</h1>
+</section>
+<!-- Header close -->
+
+
+<!-- Hot Breakfast -->
+    <div class="recipe_title">
+        <h1>Hot Breakfast</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, a!</p>
+    </div>
+        <section class="gallary">
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Moong Dal and Cauliflower Greens Appe</h5>
+                </div>
+                <img src="css/images/cauliflower_and_green_appe.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe1.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Bajra Onion Muthia</h5>
+                </div>
+                <img src="css/images/bajra_onion_muthia,.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe2.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Mixed Sprouts Parota</h5>
+                </div>
+                <img src="css/images/mixed_sprouts_parota.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe3.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Green Peas Dhokla</h5>
+                </div>
+                <img src="css/images/green_peas_dhokla.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe4.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        </section>
+
+<!-- second row -->
+        <section class="gallary">
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Quinoa Veg Upma</h5>
+                </div>
+                <img src="css/images/quinoa_veg_upma,.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe5.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Sprouted Matki Poha</h5>
+                </div>
+                <img src="css/images/sprouted_matki_poha.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe6.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Oats Flax Seeds Roti</h5>
+                </div>
+                <img src="css/images/oats_flax_seed_roti.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Hot breakfast/recipe7.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+        </section>
+    <br>
+<hr>
+
+<!--Crunchy Jar Snacks -->
+<div class="recipe_title">
+    <h1>Crunchy Jar Snacks</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, a!</p>
+</div>
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5>Bajra Nimki</h5>
+            </div>
+            <img src="css/images/bajra_nimki.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe8.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Multi Flour Chakli</h5>
+            </div>
+            <img src="css/images/multi_flour_chakli.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe9.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Quinoa Red Chawli Leaves Khakra</h5>
+            </div>
+            <img src="css/images/quinoa_red_chawli_leaves_khakhra.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe10.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Oats Poha Chivda</h5>
+            </div>
+            <img src="css/images/oats_and_poha_chivda.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe11.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    </section>
+
+<!-- second row -->
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5>Baked Nichni Sev</h5>
+            </div>
+            <img src="css/images/baked_nachni_sev.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe12.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Beetroot Shakkarpara</h5>
+            </div>
+            <img src="css/images/beetroot_shakkarpara.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe13.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Healthy Baked Seedai</h5>
+            </div>
+            <img src="css/images/recipes/seedai.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Crunchy Jar Snacks/recipe14.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+    </section>
+
+    <br>
+    <hr>
+
+    <!-- Delicious Main Meals-->
+<div class="recipe_title">
+    <h1>Delicious Main Meals</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, a!</p>
+</div>
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5>Spicy Chawli Leaves and Spinach Paratha</h5>
+            </div>
+            <img src="css/images/chawli_paratha.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe15.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Date and Sesame Puranpoli</h5>
+            </div>
+            <img src="css/images/date_and_sesame_puranpoli.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe16.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Jowar Bhakri</h5>
+            </div>
+            <img src="css/images/jowar_bhakri.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe17.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Beetroot Tikkis in Spinach Gravy</h5>
+            </div>
+            <img src="css/images/beetroot_tikkis_in_spinach_gravy.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe18.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    </section>
+
+<!-- second row -->
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5>Suva Chana Dal</h5>
+            </div>
+            <img src="css/images/suva_chana_dal.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe19.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Bajra Whole Moong and Green Pea Khichdi</h5>
+            </div>
+            <img src="css/images/bajra,_whole_moong_and_green_pea_khichdi.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe20.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Gongura Pulihora</h5>
+            </div>
+            <img src="css/images/gongura_pulihor_recipe,_andhra_style_pulao.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Delicious Main Meals/recipe21.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+    </section>
+
+    <br>
+    <hr>
+
+<!-- Quick Iron Rich Fare -->
+    <div class="recipe_title">
+        <h1>Quick Iron Rich Fare</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, a!</p>
+    </div>
+        <section class="gallary">
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Halim Drink</h5>
+                </div>
+                <img src="css/images/halim_drink.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe22.html">View Full Recipe</a></button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Strawberry Almond Milk and Oats Smoothie</h5>
+                </div>
+                <img src="css/images/strawberry_almond_milk_and_oats_smoothie.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe23.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5> Lentil Tomato and Spinach Soup</h5>
+                </div>
+                <img src="css/images/lentil,_tomato_and_spinach_soup.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe24.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Kale Masoor Veg Antioxidant Healthy Office Salad</h5>
+                </div>
+                <img src="css/images/kale,_masoor_veg_antioxidant_healthy_office_salad.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe25.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        </section>
+    
+    <!-- second row -->
+        <section class="gallary">
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Buckwheat Dosa</h5>
+                </div>
+                <img src="css/images/buckwheat_dosa.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe26.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Spinach and Mint Juice</h5>
+                </div>
+                <img src="css/images/spinach_and_mint_juice.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe27.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="cardhead">
+                    <h5>Methi Thalipeeth</h5>
+                </div>
+                <img src="css/images/methi_thalipeeth.jpg" alt="">
+                <div class="cardbottom">
+                    <button><a href="Quick Iron Rich Fare/recipe28.html">View Full Recipe</a></button>
+                </div>
+            </div>
+        
+        </section>
+    
+        <br>
+        <hr>
+ 
+
+<!-- Festive Iron Rich Sweets -->
+<div class="recipe_title">
+    <h1>Festive Iron Rich Sweets</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, a!</p>
+</div>
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5>Jowar and Pear Appam</h5>
+            </div>
+            <img src="css/images/jowar_and_pear_appam.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe29.html">View Full Recipe</a></button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="cardhead">
+                <h5>Oats and Mixed Nuts Laddo</h5>
+            </div>
+            <img src="css/images/oats_and_mixed_nuts_laddoo.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe30.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5> Badam ka Sheera</h5>
+            </div>
+            <img src="css/images/badam_ka_sheera.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe31.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Mixed Tik Chikki</h5>
+            </div>
+            <img src="css/images/mixed_til_chikki.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe32.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    </section>
+ 
+<!-- second row -->
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5> Halim Ladoo</h5>
+            </div>
+            <img src="css/images/halim_ladoo.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe33.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Healthy Chana Dal Ragi Peda</h5>
+            </div>
+            <img src="css/images/healthy_chana_dal_and_ragi_peda.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe34.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="cardhead">
+                <h5>Besan Barfi</h5>
+            </div>
+            <img src="css/images/besan_barfi.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Festive Iron Rich Sweets/recipe35.html">View Full Recipe</a></button>
+            </div>
+        </div>
+    
+    </section>
+
+    <br>
+    <hr>
+
+
+<!-- Basic Recipe -->
+<div class="recipe_title">
+    <h1>Basic Recipe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, a!</p>
+</div>
+    <section class="gallary">
+        <div class="card">
+            <div class="cardhead">
+                <h5>Homemade Almond Milk</h5>
+            </div>
+            <img src="css/images/recipes/Almond_Milk_Recipe.jpg" alt="">
+            <div class="cardbottom">
+                <button><a href="Basic Recipe/recipe36.html">View Full Recipe</a></button>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <hr>
+
+
+
+        <!-- Footer -->
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Cumque repellat inventore illo aliquam
+            necessitatibus soluta architecto harum voluptas iure nesciunt.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p>Made with <i class="bi bi-heart"></i> by Rohit Shrimali, Sonal Mishra, and Zikra Azhar</p>
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            $("i").click(function () {
+                $(".nav-links").toggle('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>

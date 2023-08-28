@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css\style.css">
+    <title>Index</title>
+
+
+    
+</head>
+
+<body>
+    <!-- Header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="css\images\logo-no-background.png"></a>
+            <div class="nav-links">
+                <i class="bi bi-x-lg"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="recipesgallary.html">RECIPES</a></li>
+                    <li><a href="recipesgallary.html">BLOG</a></li>
+                    <li><a href="form.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- Header close -->
+
+
+    <!-- Contact us content -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h2>Enter Details :</h1>
+                    <form action="database.php" method="post">
+                        <input class="input" type="text" name="name" placeholder="Enter your name">
+                        <input class="input" type="email" name="email" placeholder="Enter your email id">
+                        <input class="input" type="text" name="number" placeholder="Contact Number">
+                        <textarea name="review" id="" cols="30" rows="10" placeholder="Give a review"></textarea>
+                        <!-- <button type="submit"><a href="" class="hero-btn red-btn">Submit</a></button> -->
+
+                        <input type="submit" class="hero-btn red-btn" class="submit" >
+                    </form>
+            </div>
+            <div class="about-col">
+                <img src="css/images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer" id="about">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Cumque repellat inventore illo aliquam
+            necessitatibus soluta architecto harum voluptas iure nesciunt.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p>Made with <i class="bi bi-heart"></i> by Rohit Shrimali, Sonal Mishra, and Zikra Azhar</p>
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            $("i").click(function () {
+                $(".nav-links").toggle('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>
